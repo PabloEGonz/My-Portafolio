@@ -98,9 +98,17 @@ main {
 
 #socials {
   margin-top: 0;
+  margin-left: 0;
   height: 10%;
   width: 60%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
+}
+ul {
+  padding: 0;
+}
+li {
+  margin: 0 auto 0 auto;
+  list-style-type: none;
 }
