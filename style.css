@@ -5,69 +5,95 @@ header {
   top: 0;
   left: 0;
   background: #3c3a39;
-  height: 10vh;
-  width: 100%;
+  width: 375px;
+  height: 92px;
   display: flex;
   justify-content: space-between;
   position: absolute;
   align-items: center;
 }
 .top {
-  height: 20%;
-  margin: 0 20px 0 20px;
+  margin: 0 30px 0 20px;
+  padding-top: 30px;
 }
 #logo {
-  height: 60px;
+  margin: 0 0 0 24px;
+  padding-top: 18px;
+  height: 24px;
+  width: 70px;
+  left: 12px;
+  top: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
 }
 main {
-  top: 10vh;
-  left: 0;
-  position: absolute;
   background-color: #1c1a19;
-  width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   background-image: url("/images/illustra.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right 0 bottom 0;
+  position: absolute;
+  height: 590px;
+  width: 375px;
+  left: 0px;
+  top: 92px;
+  border-radius: 0px;
+  padding: 80px 24px 120px 24px;
 }
-section {
-  padding: 20px;
-}
+
 #presentation h1 {
-  padding-top: 100px;
-  color: #ff6b00;
-  font-family: "Crete Round";
-  font-style: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  height: 124px;
+  width: 327px;
+  left: 24px;
+  top: 120px;
+  font-family: Crete Round;
+  font-size: 56px;
   font-weight: 400;
-  font-size: 60px;
   line-height: 64px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: #ff6b00;
 }
 #presentation h3 {
-  font-size: 30px;
-  color: #fff5e1;
-  font-family: "Roboto";
-  font-style: normal;
+  margin-top: 10px;
+  height: 20px;
+  width: 327px;
+  left: 24px;
+  top: 256px;
+  font-family: Roboto;
+  font-size: 24px;
   font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff5e1;
 }
 #presentation p {
+  height: 123px;
+  width: 327px;
+  left: 24px;
+  top: 295px;
+  font-family: Poppins;
   font-size: 16px;
-  color: #ffffff;
-  font-family: "Poppins";
-  font-style: normal;
   font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
 }
 #socials {
+  margin-top: 0;
+  height: 10%;
   width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-/* #bck-image {
-  background-image: url("/images/illustra.png");
-  background-repeat: no-repeat;
-  background-size: auto;
-  height: 30%;
-} */
