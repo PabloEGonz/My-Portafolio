@@ -23,11 +23,15 @@ main {
   top: 10vh;
   left: 0;
   position: absolute;
-  background: #1c1a19;
+  background-color: #1c1a19;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url("/images/illustra.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right 0 bottom 0;
 }
 section {
   padding: 20px;
@@ -55,3 +59,15 @@ section {
   font-style: normal;
   font-weight: 400;
 }
+#socials {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* #bck-image {
+  background-image: url("/images/illustra.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 30%;
+} */
