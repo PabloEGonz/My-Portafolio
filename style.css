@@ -105,9 +105,11 @@ main {
   align-items: center;
   justify-content: start;
 }
+
 ul {
   padding: 0;
 }
+
 li {
   margin: 0 auto 0 auto;
   list-style-type: none;
