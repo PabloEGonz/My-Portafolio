@@ -30,7 +30,7 @@ header {
   text-align: center;
   color: #fff;
   text-decoration: none;
-  font-family: "Roboto", "Times New Roman";
+  font-family: "Roboto", sans-serif;
 }
 
 main {
@@ -56,7 +56,7 @@ main {
   width: 327px;
   left: 24px;
   top: 120px;
-  font-family: "Crete Round", "Times New Roman";
+  font-family: "Crete Round", serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 64px;
@@ -71,7 +71,7 @@ main {
   width: 327px;
   left: 24px;
   top: 256px;
-  font-family: "Roboto", "Times New Roman";
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
@@ -85,7 +85,7 @@ main {
   width: 327px;
   left: 24px;
   top: 295px;
-  font-family: "Poppins", Arial;
+  font-family: "Poppins", serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -107,6 +107,7 @@ main {
 li {
   list-style-type: none;
 }
+
 #medium-icon,
 #twitter-icon {
   margin-left: -12px;
