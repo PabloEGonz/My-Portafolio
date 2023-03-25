@@ -2,14 +2,12 @@
 
 <div align="center">
   
-  <img src="nameLogo.jpg" alt="logo" width="140"  height="auto" />
+  <img src="images\nameLogo.jpg" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>My Portafolio</b></h3>
 
 </div>
-
-
 
 # 📗 Table of Contents
 
@@ -33,10 +31,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-
 # 📖 My Portafolio Project <a name="about-project"></a>
 
- My portafolio with information about me and my abilities.
+My portafolio with information about me and my abilities.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -55,7 +52,6 @@
   </ul>
 </details>
 
-
 ### Key Features <a name="key-features"></a>
 
 - Added index.html file.
@@ -63,13 +59,11 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - Coming soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -113,9 +107,7 @@ Open index.html using live server extention.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 👥 Authors <a name="authors"></a>
-
 
 👤 Pablo Gonzalez
 
@@ -124,7 +116,6 @@ Open index.html using live server extention.
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/pablo-ezequiel-gonz%C3%A1lez-ramos-b9b854265)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🔭 Future Features <a name="future-features"></a>
 
@@ -141,20 +132,17 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## ⭐️ Show your support <a name="support"></a>
 
 If you like this project give it a star ⭐️.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse for the opportunity given.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 📝 License <a name="license"></a>
 
