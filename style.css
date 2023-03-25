@@ -116,14 +116,14 @@ li {
 #middle {
   height: 3455px;
   width: 375px;
-  left: 0px;
+
   top: 682px;
   padding: 120px 0px 120px 0px;
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
   gap: 70px;
+  grid-template-columns: auto;
+  justify-content: center;
 }
 
 #middle h2 {
@@ -162,8 +162,7 @@ li {
   left: 0px;
   top: 48px;
 }
-
-#middle ul {
+.tools {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -173,7 +172,7 @@ li {
   height: 40px;
 }
 
-#middle li {
+.tools li {
   padding: 10px 12px;
   font-family: "Inter";
   font-style: normal;
@@ -215,7 +214,6 @@ li {
   width: 295px;
   left: 16px;
   top: 8px;
-  border-radius: nullpx;
   color: #fff;
 }
 #middle .projects p {
@@ -223,7 +221,6 @@ li {
   width: 295px;
   left: 16px;
   top: 101px;
-  border-radius: nullpx;
 }
 
 #middle .projects li {
@@ -233,4 +230,88 @@ li {
 
 #middle .projects button {
   width: 100%;
+}
+
+#about-me {
+  position: absolute;
+  height: 1801px;
+  width: 375px;
+  left: 0px;
+  top: 3937px;
+  background: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-me h2 {
+  font-family: Crete Round;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 88px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: #ff6b00;
+  height: 79px;
+  width: 327px;
+  left: 24px;
+  top: 120px;
+}
+#about-me p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  width: 327px;
+  height: 148px;
+}
+
+#about-me button {
+  align-self: self-start;
+  height: 48px;
+  width: 156px;
+  left: 1px;
+  top: 395px;
+  padding: 12px;
+  margin-left: 25px;
+}
+
+#knowledge {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 164px;
+  justify-content: space-between;
+  top: 8.7279052734375px;
+  font-family: "InaiMathi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+#knowledge li {
+  font-family: InaiMathi;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+
+#knowledge p {
+  height: 24px;
+  left: 0px;
+  top: 12px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
 }
