@@ -276,7 +276,7 @@ li {
 }
 
 #about-me h2 {
-  font-family: Crete Round, serif;
+  font-family: "Crete Round", serif;
   font-size: 72px;
   font-weight: 400;
   line-height: 88px;
@@ -286,7 +286,8 @@ li {
   height: 79px;
   width: 327px;
   left: 24px;
-  top: 120px;
+  top: 140px;
+  margin-top: 130px;
 }
 
 #middle #about-me p {
