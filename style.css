@@ -116,12 +116,11 @@ li {
 #middle {
   height: 3455px;
   width: 375px;
-
   top: 682px;
-  padding: 120px 0px 120px 0px;
+  padding: 120px 0 120px 0;
   position: absolute;
   display: grid;
-  gap: 70px;
+  gap: 70px 0;
   grid-template-columns: auto;
   justify-content: center;
 }
@@ -189,6 +188,7 @@ li {
   background-color: #ff6b00;
   border: none;
 }
+
 #middle button a {
   font-family: "Inter";
   font-style: normal;
@@ -196,7 +196,19 @@ li {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: #fff;
+}
+#middle button:hover {
+  background-color: #fff5e1;
+}
+#middle button:hover > * {
+  color: #ff6b00;
+}
+#middle button:active  {
+  background-color: #e05304;
+}
+#middle button:active > * {
+  color: #f4f1f0; 
 }
 .projects {
   color: #fff;
@@ -233,9 +245,11 @@ li {
 }
 
 #about-me {
+  margin-left: -8px;
+  justify-self: self-start;
   position: absolute;
   height: 1801px;
-  width: 375px;
+  width: 100%;
   left: 0px;
   top: 3937px;
   background: #1c1a19;
