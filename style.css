@@ -278,6 +278,20 @@ li {
   margin-left: 25px;
 }
 
+#background {
+  height: 250px;
+  width: 95%;
+  margin-left: 5%;
+  background-image: url("/images/background-img.png");
+  background-repeat: no-repeat;
+  background-position: right 1px bottom 0;
+}
+#line {
+  padding: 5px;
+  width: 85%;
+  border-bottom: 2px solid #fff;
+}
+
 #knowledge {
   padding-left: 0;
   display: flex;
@@ -294,7 +308,7 @@ li {
 }
 
 #knowledge li {
-  padding-top: 15px;
+  padding-top: 35px;
   font-family: "Inter";
   font-size: 32px;
   font-weight: 700;
@@ -304,6 +318,7 @@ li {
 }
 
 #knowledge p {
+  margin: 15px 0 15px 0;
   height: 24px;
   font-family: "Inter";
   font-style: normal;
