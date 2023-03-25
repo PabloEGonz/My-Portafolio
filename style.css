@@ -343,7 +343,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 164px;
+  width: 100%;
   text-align: center;
   top: 8.7279052734375px;
   font-family: "Inter", serif;
@@ -351,6 +351,27 @@ li {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+}
+
+#knowledge li:nth-child(1) {
+  background-image: url("/images/rhombus.png");
+  background-repeat: no-repeat;
+  background-size: 8.7%;
+  background-position: left 50px bottom 84%;
+}
+
+#knowledge li:nth-child(2) {
+  background-image: url("/images/square.png");
+  background-repeat: no-repeat;
+  background-size: 6%;
+  background-position: left 40px bottom 83%;
+}
+
+#knowledge li:nth-child(3) {
+  background-image: url("/images/circle.png");
+  background-size: 6%;
+  background-repeat: no-repeat;
+  background-position: left 109px bottom 86%;
 }
 
 .main-list {
@@ -361,6 +382,7 @@ li {
   font-weight: 700;
   line-height: 44px;
   color: white;
+  width: 100%;
 }
 
 .main-list ul {
@@ -381,4 +403,5 @@ li {
   line-height: 43px;
   text-align: center;
   color: white;
+  background-image: none;
 }
