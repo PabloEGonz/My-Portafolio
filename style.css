@@ -294,24 +294,22 @@ li {
 }
 
 #knowledge li {
-  font-family: InaiMathi;
+  padding-top: 15px;
+  font-family: "Inter";
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
   text-align: left;
   color: white;
 }
 
 #knowledge p {
   height: 24px;
-  left: 0px;
-  top: 12px;
-  font-family: Inter;
-  font-size: 22px;
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 400;
+  font-size: 22px;
   line-height: 43px;
-  letter-spacing: 0em;
   text-align: center;
   color: white;
 }
