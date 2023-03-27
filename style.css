@@ -176,8 +176,9 @@ li {
 }
 
 .tools {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
+
   align-items: center;
   padding: 0;
   gap: 10px;
@@ -194,6 +195,7 @@ li {
   line-height: 20px;
   color: #091e42;
   border: 1px solid #8993a4;
+  float: left;
 }
 
 #middle div button {
