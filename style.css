@@ -216,27 +216,33 @@ li {
   color: #fff;
 }
 
-#middle button:hover {
+#middle button:hover,
+form button:hover {
   background-color: #fff5e1;
 }
 
-#middle button:hover > * {
+#middle button:hover > *,
+form button:hover {
   color: #ff6b00;
 }
 
-#middle button:active {
+#middle button:active,
+form button:active {
   background-color: #e05304;
 }
 
-#middle button:active > * {
+#middle button:active > *,
+form button:active {
   color: #f4f1f0;
 }
 
-#middle button:disabled {
+#middle button:disabled,
+form button:disabled {
   background-color: #f4f1f0;
 }
 
-#middle button:disabled > * {
+#middle button:disabled > *,
+form button:disabled {
   color: #5b5957;
 }
 
@@ -454,7 +460,7 @@ form input {
   line-height: 24px;
   border: none;
   border-bottom: 1px solid #dbd8d7;
-  padding: 15px 0 15px 15px;
+  padding: 20px 0 20px 15px;
   background: #fbf8f7;
 }
 
@@ -484,6 +490,10 @@ form textarea {
   letter-spacing: 0em;
   text-align: left;
   background: #fbf8f7;
+}
+input[type="text"],
+textarea[type="text"]::-webkit-input-placeholder {
+  color: black;
 }
 
 footer {
