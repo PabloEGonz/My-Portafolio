@@ -47,8 +47,8 @@ My portafolio with information about me and my abilities.
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="">HTML</a></li>
-    <li><a href="">CSS</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/CSS">CSS</a></li>
   </ul>
 </details>
 
