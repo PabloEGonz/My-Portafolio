@@ -178,6 +178,8 @@ li {
 }
 
 .tools {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   padding: 0;
   gap: 10px;
@@ -194,8 +196,6 @@ li {
   line-height: 20px;
   color: #091e42;
   border: 1px solid #8993a4;
-  float: left;
-  margin-left: 10px;
 }
 
 #middle div button {
@@ -406,4 +406,106 @@ li {
   text-align: center;
   color: white;
   background-image: none;
+}
+
+#last-text {
+  position: absolute;
+  background: #fff;
+  width: 375px;
+  height: 880px;
+  top: 6007px;
+  display: flex;
+  flex-direction: column;
+}
+
+#last-text h2 {
+  width: 327px;
+  height: 262px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 138%;
+  text-align: center;
+  color: #172b4d;
+  margin: 80px 24px;
+}
+
+form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  width: 327px;
+  height: 330px;
+  width: 327px;
+  top: 400px;
+  margin-left: 24px;
+}
+form input {
+  height: 28px;
+  width: 90%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  padding: 15px 0 15px 15px;
+  background: #fbf8f7;
+}
+
+form button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background: #ff6b00;
+  width: 131px;
+  height: 48px;
+  border: none;
+}
+
+form textarea {
+  margin: 10px 0 0 0;
+  height: 114px;
+  width: 90%;
+  border: none;
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: #fbf8f7;
+}
+
+footer {
+  border-top: 1px solid #dfe1e6;
+  position: absolute;
+  width: 375px;
+  height: 62px;
+  top: 6805px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#socials-footer {
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  filter: brightness(0.35);
 }
