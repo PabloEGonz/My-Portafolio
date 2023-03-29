@@ -222,14 +222,24 @@
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h2>
-        <form action="">
-          <input type="text" name="" id="" placeholder="Full name" />
-          <input type="email" name="" id="" placeholder="Email address" />
+        <form action="https://formspree.io/f/xwkjrpwp" method="post">
+          <input
+            type="text"
+            name="name"
+            maxlength="30"
+            placeholder="Full name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address"
+            required
+          />
           <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
+            name="text-box"
+            maxlength="500"
+            type="text"
             placeholder="Write me something..."
           ></textarea>
           <button type="submit" value="Get in Touch">Get in touch</button>
