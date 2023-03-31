@@ -155,7 +155,7 @@ li {
   margin: 0;
 }
 
-#middle div {
+#middle .multi-post {
   margin-top: 0;
   padding: 0;
 }
@@ -491,7 +491,6 @@ form textarea {
   line-height: 24px;
   text-align: left;
   background: #fbf8f7;
-  letter-spacing: 0;
 }
 
 input[type="text"],
@@ -515,8 +514,7 @@ footer {
 }
 
 #socials-footer {
-  padding: 0;
-  padding-bottom: 50px;
+  padding: 0 0 50px 0;
   width: 200px;
   height: 40px;
   display: flex;
@@ -530,20 +528,23 @@ footer {
   header {
     height: 72px;
   }
+
   #logo {
     margin-left: 142px;
   }
+
   #menu {
     display: none;
   }
+
   nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
     width: 455px;
-    margin-right: 52px;
   }
+
   nav a {
     display: contents;
     font-family: "Inter";
@@ -551,30 +552,27 @@ footer {
     font-weight: 600;
     line-height: 20px;
     color: #fff;
-
     width: 63px;
     height: 20px;
   }
   nav a img {
-    width: 21px;
-    height: 18px;
+    width: 25px;
+    height: 22px;
   }
 
   main {
     background-image: url("images/illustration-header.png");
     top: 72px;
-    background-color: #1c1a19;
     background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: right -120px bottom 20px;
+    background-size: 35%;
+    background-position: right 0 bottom 0;
   }
+
   #presentation {
     display: flex;
     align-items: center;
   }
 
-  .text-presentation {
-  }
   #presentation h1 {
     margin-top: 92px;
     font-size: 72px;
@@ -582,18 +580,21 @@ footer {
     width: 450px;
     height: 160px;
   }
+
   #presentation h3 {
     font-size: 32px;
     line-height: 44px;
     width: 566px;
     height: 24px;
   }
+
   #presentation p {
     font-size: 20px;
     line-height: 32px;
     width: 566px;
     height: 123px;
   }
+
   #socials {
     flex-direction: column;
     float: left;
@@ -607,9 +608,12 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 5% 0 5%;
-    gap: 5%;
+    gap: 3%;
     height: 1500px;
+    padding-top: 60px;
+    align-items: start;
   }
+
   #middle h2 {
     float: left;
     width: 315px;
@@ -622,21 +626,16 @@ footer {
   .border-animation {
     border: 1px solid black;
     height: 0;
-    width: 50%;
-    margin: 0 5% 0 5%;
+    width: 60%;
   }
 
   #middle img {
     width: 684px;
     height: 448px;
-    float: left;
-    /* margin-left: -100px; */
-  }
-  .multi-post {
-    margin-left: 20px;
   }
 
   #middle h3 {
+    margin-top: 15px;
     font-size: 40px;
     line-height: 52px;
     width: 448px;
@@ -652,38 +651,48 @@ footer {
 
   .project-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 369px));
-    grid-template-rows: repeat(2, minmax(300px, 435px));
-    grid-gap: 2%;
+    grid-template-columns: repeat(3, 359px);
+    grid-template-rows: repeat(2, 365px);
+    justify-content: center;
+    row-gap: 7%;
   }
+
   .projects {
     max-height: 435px;
     max-width: 369px;
-    padding: auto;
+  }
+
+  .projects:hover > *:not(button) {
+    display: none;
   }
 
   #middle .projects h3 {
+    margin-top: 40%;
     font-size: 32px;
     line-height: 44px;
     max-width: 337px;
     max-height: 81px;
   }
+
   #middle .projects p {
     font-size: 17px;
     line-height: 24px;
     max-width: 337px;
     max-height: 72px;
   }
+
   #middle .projects button {
-    display: none;
+    margin-top: 103%;
   }
+
   #about-me {
     height: 1251px;
     top: 1750px;
     background-image: url("images/aboutme-background.png");
     background-repeat: no-repeat;
-    background-position: right 0 top 6%;
+    background-position: right 0 top 13%;
   }
+
   #text-aboutme {
     align-self: self-start;
     display: flex;
@@ -726,18 +735,15 @@ footer {
     gap: 10%;
   }
   #knowledge li:nth-child(1) {
-    background-size: 8.7%;
-    background-position: left 0 bottom 0;
+    background-position: left 5% bottom 40%;
   }
 
   #knowledge li:nth-child(2) {
-    background-size: 6%;
-    background-position: left 0 bottom 0;
+    background-position: left 10% bottom 45%;
   }
 
   #knowledge li:nth-child(3) {
-    background-size: 6%;
-    background-position: left 0 bottom 0;
+    background-position: left 28% bottom 50%;
   }
 
   .main-list {
@@ -747,6 +753,7 @@ footer {
     font-size: 32px;
     line-height: 44px;
   }
+
   #middle .main-list ul li {
     width: 255px;
     height: 24px;
@@ -755,11 +762,9 @@ footer {
   }
 
   #last {
-    background: #fff;
     width: 100%;
     height: 625px;
     top: 3665px;
-    display: flex;
     flex-direction: row;
     align-items: start;
   }
@@ -773,13 +778,8 @@ footer {
   }
 
   form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
     width: 50%;
     height: 330px;
-    top: 400px;
     margin: 100px 0 0 5%;
   }
 
@@ -788,8 +788,8 @@ footer {
     width: 100%;
     padding: 20px 0 20px 10px;
   }
+  
   form textarea {
-    margin: 0;
     height: 114px;
     padding-left: 10px;
     width: 100%;
