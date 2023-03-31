@@ -25,6 +25,10 @@ header {
   margin: 0 25px 0 0;
 }
 
+nav a {
+  display: none;
+}
+
 #logo {
   margin: 0 0 0 25px;
   height: 24px;
@@ -50,7 +54,7 @@ main {
   background-position: right 0 bottom 0;
   position: absolute;
   height: 590px;
-  width: 375px;
+  width: 100%;
   left: 0;
   top: 82px;
   padding: 80px 24px 120px 24px;
@@ -123,13 +127,14 @@ li {
 #middle {
   margin: 0;
   height: 3455px;
-  width: 375px;
-  top: 682px;
-  padding: 120px 0 0 0;
+  width: 100%;
+  top: 662px;
   position: absolute;
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap: 0.5%;
 }
 
 #middle h2 {
@@ -140,7 +145,6 @@ li {
   font-size: 40px;
   line-height: 52px;
   border-bottom: 1px solid black;
-  width: 98%;
 }
 
 #middle img {
@@ -149,7 +153,7 @@ li {
   margin: 0;
 }
 
-#middle div {
+#middle .multi-post {
   margin-top: 0;
   padding: 0;
 }
@@ -302,7 +306,7 @@ li {
   width: 100%;
   left: 0;
   right: 0;
-  top: 3537px;
+  top: 3457px;
   background: #1c1a19;
   display: flex;
   flex-direction: column;
@@ -348,15 +352,11 @@ li {
   margin-left: 25px;
 }
 
-#background {
-  height: 250px;
-  width: 90%;
-}
-
 #line {
+  margin-top: 250px;
   padding: 5px;
   width: 85%;
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 #knowledge {
@@ -430,11 +430,12 @@ li {
 #last {
   position: absolute;
   background: #fff;
-  width: 375px;
+  width: 100%;
   height: 880px;
   top: 6007px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #last h2 {
@@ -451,7 +452,6 @@ li {
 }
 
 form {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -489,7 +489,6 @@ form textarea {
   line-height: 24px;
   text-align: left;
   background: #fbf8f7;
-  letter-spacing: 0;
 }
 
 input[type="text"],
@@ -500,7 +499,7 @@ textarea[type="text"]::-webkit-input-placeholder {
 footer {
   border-top: 1px solid #dfe1e6;
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 115px;
   top: 6805px;
   display: flex;
@@ -513,8 +512,7 @@ footer {
 }
 
 #socials-footer {
-  padding: 0;
-  padding-bottom: 50px;
+  padding: 0 0 50px 0;
   width: 200px;
   height: 40px;
   display: flex;
@@ -522,4 +520,304 @@ footer {
   align-items: center;
   justify-content: space-between;
   filter: brightness(0.35);
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 72px;
+  }
+
+  #logo {
+    margin-left: 142px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 455px;
+  }
+
+  nav a {
+    display: contents;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #fff;
+    width: 63px;
+    height: 20px;
+  }
+
+  nav a img {
+    width: 25px;
+    height: 22px;
+  }
+
+  main {
+    background-image: url("images/illustration-header.png");
+    top: 72px;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: right 0 bottom 0;
+  }
+
+  #presentation {
+    display: flex;
+    align-items: center;
+  }
+
+  #presentation h1 {
+    margin-top: 92px;
+    font-size: 72px;
+    line-height: 82px;
+    width: 450px;
+    height: 160px;
+  }
+
+  #presentation h3 {
+    font-size: 32px;
+    line-height: 44px;
+    width: 566px;
+    height: 24px;
+  }
+
+  #presentation p {
+    font-size: 20px;
+    line-height: 32px;
+    width: 566px;
+    height: 123px;
+  }
+
+  #socials {
+    flex-direction: column;
+    float: left;
+    order: -1;
+    width: 40px;
+    height: 200px;
+    margin: 0 5% 0 0;
+  }
+
+  #middle {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 5% 0 5%;
+    gap: 3%;
+    height: 1500px;
+    padding-top: 60px;
+    align-items: start;
+  }
+
+  #middle h2 {
+    float: left;
+    width: 315px;
+    height: 52px;
+    font-size: 40px;
+    line-height: 52px;
+    border: none;
+    align-self: center;
+  }
+
+  .border-animation {
+    border: 1px solid black;
+    height: 0;
+    width: 60%;
+    align-self: center;
+  }
+
+  #middle img {
+    width: 684px;
+    height: 448px;
+  }
+
+  #middle h3 {
+    margin-top: 15px;
+    font-size: 40px;
+    line-height: 52px;
+    width: 448px;
+    height: 48px;
+  }
+
+  #middle p {
+    font-size: 20px;
+    line-height: 28px;
+    width: 448px;
+    height: 140px;
+  }
+
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 359px);
+    grid-template-rows: repeat(2, 365px);
+    justify-content: center;
+    row-gap: 7%;
+  }
+
+  .projects {
+    max-height: 435px;
+    max-width: 369px;
+  }
+
+  .projects:hover > *:not(button) {
+    display: none;
+  }
+
+  #middle .projects h3 {
+    margin-top: 40%;
+    font-size: 32px;
+    line-height: 44px;
+    max-width: 337px;
+    max-height: 81px;
+  }
+
+  #middle .projects p {
+    font-size: 17px;
+    line-height: 24px;
+    max-width: 337px;
+    max-height: 72px;
+  }
+
+  #last button {
+    align-self: self-start;
+    width: 122px;
+  }
+
+  #middle .projects button {
+    margin-top: 103%;
+  }
+
+  #about-me {
+    height: 1251px;
+    top: 1750px;
+    background-image: url("images/aboutme-background.png");
+    background-repeat: no-repeat;
+    background-position: right 0 top 13%;
+  }
+
+  #text-aboutme {
+    align-self: self-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+  }
+
+  #about-me h2 {
+    width: 566px;
+    height: 78px;
+    font-size: 72px;
+    line-height: 82px;
+    margin-bottom: 4%;
+  }
+
+  #middle #about-me p {
+    width: 566px;
+    height: 148px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  #middle #about-me button {
+    width: 156px;
+    height: 48px;
+    margin-left: 0;
+  }
+
+  #line {
+    margin: 125px 0 125px 0;
+    width: 80%;
+  }
+
+  #knowledge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    justify-content: start;
+    gap: 10%;
+  }
+
+  #knowledge li:nth-child(1) {
+    background-position: left 6% bottom 40%;
+  }
+
+  #knowledge li:nth-child(2) {
+    background-position: left 8% bottom 45%;
+  }
+
+  #knowledge li:nth-child(3) {
+    background-position: left 0 bottom 47%;
+    padding-right: 12%;
+  }
+
+  .main-list {
+    padding: 0 0 0 0;
+    width: 299.46px;
+    height: 41.46px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  #middle .main-list ul li {
+    width: 255px;
+    height: 24px;
+    font-size: 22px;
+    line-height: 43px;
+    text-align: left;
+  }
+
+  #last {
+    width: 100%;
+    height: 625px;
+    top: 3665px;
+    flex-direction: row;
+    align-items: start;
+  }
+
+  #last h2 {
+    margin: 100px 0 0 8%;
+    width: 420px;
+    height: 256px;
+    font-size: 40px;
+    line-height: 52px;
+    color: #262626;
+    text-align: left;
+  }
+
+  form {
+    width: 50%;
+    height: 330px;
+    margin: 100px 0 0 5%;
+  }
+
+  form input {
+    height: 28px;
+    width: 100%;
+    padding: 20px 0 20px 10px;
+  }
+
+  form textarea {
+    height: 114px;
+    padding-left: 10px;
+    width: 100%;
+  }
+
+  footer {
+    height: 72px;
+    top: 4290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: none;
+    padding: 0;
+  }
+
+  #socials-footer {
+    padding: 0;
+  }
 }
