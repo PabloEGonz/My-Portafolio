@@ -42,24 +42,32 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  /* transition-property: transform;
-  transition-duration: 4s;
-  transition-delay: 2s; */
-  animation: spin 2s linear infinite;
+  animation: spin 2s linear 1;
+  /* animation: shirk 3s ease-in-out infinite; */
 }
 
-@keyframes logo {
+@keyframes spin {
   0% {
     transform: rotate(0deg);
+    font-size: 12px;
+  }
+  25% {
+    transform: rotate(90deg);
+    font-size: 10px;
+  }
+  50% {
+    transform: rotate(180deg);
+    font-size: 5px;
+  }
+  50% {
+    transform: rotate(180deg);
+    font-size: 14x;
   }
   100% {
     transform: rotate(360deg);
+    font-size: 18px;
   }
 }
-
-/* #logo .loaded {
-  transform: rotate(180deg);
-} */
 
 main {
   background-color: #1c1a19;
