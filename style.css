@@ -743,23 +743,25 @@ footer {
   }
 
   #knowledge li:nth-child(1) {
-    background-position: left 5% bottom 40%;
+    background-position: left 6% bottom 40%;
   }
 
   #knowledge li:nth-child(2) {
-    background-position: left 10% bottom 45%;
+    background-position: left 8% bottom 45%;
   }
 
   #knowledge li:nth-child(3) {
-    background-position: left 28% bottom 50%;
+    background-position: left 0 bottom 47%;
+    padding-right: 14%;
   }
 
   .main-list {
-    padding-top: 0;
+    padding: 0 0 0 0;
     width: 299.46px;
     height: 41.46px;
     font-size: 32px;
     line-height: 44px;
+    
   }
 
   #middle .main-list ul li {
@@ -767,6 +769,7 @@ footer {
     height: 24px;
     font-size: 22px;
     line-height: 43px;
+    text-align: left;
   }
 
   #last {
