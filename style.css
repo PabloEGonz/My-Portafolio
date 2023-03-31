@@ -42,14 +42,24 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  transition-property: transform;
+  /* transition-property: transform;
   transition-duration: 4s;
-  transition-delay: 2s;
+  transition-delay: 2s; */
+  animation: spin 2s linear infinite;
 }
 
-#logo .loaded {
-  transform: rotate(180deg);
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
+
+/* #logo .loaded {
+  transform: rotate(180deg);
+} */
 
 main {
   background-color: #1c1a19;
