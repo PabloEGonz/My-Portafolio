@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-
   outline: 1px solid red;
 }
 
@@ -547,7 +546,7 @@ footer {
 
   nav a {
     display: contents;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-size: 15px;
     font-weight: 600;
     line-height: 20px;
@@ -555,6 +554,7 @@ footer {
     width: 63px;
     height: 20px;
   }
+
   nav a img {
     width: 25px;
     height: 22px;
@@ -681,6 +681,11 @@ footer {
     max-height: 72px;
   }
 
+  #last button {
+    align-self: self-start;
+    width: 122px;
+  }
+
   #middle .projects button {
     margin-top: 103%;
   }
@@ -714,6 +719,7 @@ footer {
     font-size: 20px;
     line-height: 32px;
   }
+
   #middle #about-me button {
     width: 156px;
     height: 48px;
@@ -734,6 +740,7 @@ footer {
     justify-content: start;
     gap: 10%;
   }
+
   #knowledge li:nth-child(1) {
     background-position: left 5% bottom 40%;
   }
@@ -768,6 +775,7 @@ footer {
     flex-direction: row;
     align-items: start;
   }
+
   #last h2 {
     margin: 100px 0 0 25px;
     width: 455px;
@@ -788,16 +796,11 @@ footer {
     width: 100%;
     padding: 20px 0 20px 10px;
   }
-  
+
   form textarea {
     height: 114px;
     padding-left: 10px;
     width: 100%;
-  }
-
-  #last button {
-    align-self: self-start;
-    width: 122px;
   }
 
   footer {
