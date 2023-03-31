@@ -42,6 +42,13 @@ nav a {
   color: #fff;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+  transition-property: transform;
+  transition-duration: 4s;
+  transition-delay: 2s;
+}
+
+#logo .loaded {
+  transform: rotate(180deg);
 }
 
 main {
