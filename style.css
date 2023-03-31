@@ -43,7 +43,6 @@ nav a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   animation: spin 2s linear 1;
-  /* animation: shirk 3s ease-in-out infinite; */
 }
 
 @keyframes spin {
@@ -73,7 +72,7 @@ main {
   background-color: #1c1a19;
   display: flex;
   flex-direction: column;
-  background-image: url("/images/illustra.png");
+  background-image: url("images/illustra.png");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right 0 bottom 0;
@@ -261,6 +260,7 @@ li {
 #middle button:hover,
 #last button:hover {
   background-color: #fff5e1;
+  transform: scale(1.2);
 }
 
 #middle button:hover > *,
@@ -294,7 +294,7 @@ li {
   width: 327px;
   left: 0;
   top: 0;
-  background-image: url("/images/placeholder.png");
+  background-image: url("images/placeholder.png");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -336,7 +336,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("/images/background-img.png");
+  background-image: url("images/background-img.png");
   background-repeat: no-repeat;
   background-position: right 1px bottom 68%;
 }
@@ -400,21 +400,21 @@ li {
 }
 
 #knowledge li:nth-child(1) {
-  background-image: url("/images/rhombus.png");
+  background-image: url("images/rhombus.png");
   background-repeat: no-repeat;
   background-size: 8.7%;
   background-position: left 50px bottom 84%;
 }
 
 #knowledge li:nth-child(2) {
-  background-image: url("/images/square.png");
+  background-image: url("images/square.png");
   background-repeat: no-repeat;
   background-size: 6%;
   background-position: left 40px bottom 83%;
 }
 
 #knowledge li:nth-child(3) {
-  background-image: url("/images/circle.png");
+  background-image: url("images/circle.png");
   background-size: 6%;
   background-repeat: no-repeat;
   background-position: left 109px bottom 86%;
@@ -512,7 +512,6 @@ form textarea {
   font-style: italic;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
   background: #fbf8f7;
 }
 
@@ -556,6 +555,10 @@ footer {
     margin-left: 142px;
   }
 
+  #logo:hover {
+    transform: scale(1.1);
+  }
+
   #menu {
     display: none;
   }
@@ -582,6 +585,11 @@ footer {
   nav a img {
     width: 25px;
     height: 22px;
+  }
+
+  nav a h3:hover,
+  a img:hover {
+    transform: scale(1.35);
   }
 
   main {
@@ -660,6 +668,11 @@ footer {
     height: 448px;
   }
 
+  #middle img:hover {
+    transform: scale(1.08);
+    translate: -8%;
+  }
+
   #middle h3 {
     margin-top: 15px;
     font-size: 40px;
@@ -686,10 +699,15 @@ footer {
   .projects {
     max-height: 435px;
     max-width: 369px;
+    overflow: hidden;
   }
 
   .projects:hover > *:not(button) {
     display: none;
+  }
+
+  .projects:hover {
+    transform: scale(1.1);
   }
 
   #middle .projects h3 {
@@ -713,7 +731,7 @@ footer {
   }
 
   #middle .projects button {
-    margin-top: 103%;
+    margin-top: 103.39%;
   }
 
   #about-me {
@@ -824,6 +842,10 @@ footer {
     height: 28px;
     width: 100%;
     padding: 20px 0 20px 10px;
+  }
+
+  input:hover::-webkit-input-placeholder {
+    translate: 1%;
   }
 
   form textarea {
