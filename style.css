@@ -50,18 +50,22 @@ nav a {
     transform: rotate(0deg);
     font-size: 12px;
   }
+
   25% {
     transform: rotate(90deg);
     font-size: 10px;
   }
+
   50% {
     transform: rotate(180deg);
     font-size: 5px;
   }
+
   50% {
     transform: rotate(180deg);
-    font-size: 14x;
+    font-size: 14px;
   }
+
   100% {
     transform: rotate(360deg);
     font-size: 18px;
