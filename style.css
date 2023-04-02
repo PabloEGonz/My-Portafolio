@@ -659,10 +659,10 @@ footer {
   .project-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(auto, 359px));
-    grid-template-rows: repeat(2, minmax(auto,365px));
+    grid-template-rows: repeat(2, minmax(auto,435px));
     justify-content: center;
     row-gap: 7%;
-    margin-bottom: 10%;
+    margin: 5% 0 5% 0;
   }
 
   .projects {
@@ -717,7 +717,7 @@ footer {
   #about-me {
     background-image: url("images/aboutme-background.png");
     background-repeat: no-repeat;
-    background-position: right 0 top 13%;
+    background-position: right -10% top 13%;
     height: 1200px;
   }
 
