@@ -566,7 +566,6 @@ footer {
 
   main {
     background-image: url("images/illustration-header.png");
-    /* top: 72px; */
     background-repeat: no-repeat;
     background-size: 35%;
     background-position: right 0 bottom 0;
@@ -613,7 +612,6 @@ footer {
     flex-wrap: wrap;
     gap: 3%;
     margin: 5% 0 0 0;
-    height: 100%;
   }
 
   #middle h2 {
@@ -720,6 +718,7 @@ footer {
     background-image: url("images/aboutme-background.png");
     background-repeat: no-repeat;
     background-position: right 0 top 13%;
+    height: 1200px;
   }
 
   #text-aboutme {
