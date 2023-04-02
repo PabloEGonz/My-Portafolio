@@ -632,8 +632,8 @@ footer {
   }
 
   #middle img {
-    width: 684px;
-    height: 448px;
+    max-width: 684px;
+    max-height: 448px;
   }
 
   #middle img:hover {
@@ -658,8 +658,8 @@ footer {
 
   .project-container {
     display: grid;
-    grid-template-columns: repeat(3, 359px);
-    grid-template-rows: repeat(2, 365px);
+    grid-template-columns: repeat(3, minmax(auto, 359px));
+    grid-template-rows: repeat(2, minmax(auto,365px));
     justify-content: center;
     row-gap: 7%;
     margin-bottom: 10%;
