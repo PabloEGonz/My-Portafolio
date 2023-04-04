@@ -380,22 +380,22 @@ li {
 #knowledge li:nth-child(1) {
   background-image: url("images/rhombus.png");
   background-repeat: no-repeat;
-  background-size: 8.7%;
-  background-position: left 50px bottom 84%;
+  background-size: 32px;
+  background-position: left 12% bottom 84%;
 }
 
 #knowledge li:nth-child(2) {
   background-image: url("images/square.png");
   background-repeat: no-repeat;
-  background-size: 6%;
-  background-position: left 40px bottom 83%;
+  background-size: 23px;
+  background-position: left 12% bottom 83%;
 }
 
 #knowledge li:nth-child(3) {
   background-image: url("images/circle.png");
-  background-size: 6%;
+  background-size: 22px;
   background-repeat: no-repeat;
-  background-position: left 109px bottom 86%;
+  background-position: left 30% bottom 86%;
 }
 
 .main-list {
@@ -632,8 +632,9 @@ footer {
   }
 
   #middle img {
-    max-width: 684px;
-    max-height: 448px;
+    margin-top: 3%;
+    height: 458px;
+    width: auto;
   }
 
   #middle img:hover {
@@ -658,8 +659,8 @@ footer {
 
   .project-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(auto, 359px));
-    grid-template-rows: repeat(2, minmax(auto,435px));
+    grid-template-columns: repeat(3, minmax(251px, 359px));
+    grid-template-rows: repeat(2, minmax(305px, 435px));
     justify-content: center;
     row-gap: 7%;
     margin: 5% 0 5% 0;
@@ -779,9 +780,9 @@ footer {
 
   .main-list {
     padding: 0 0 0 0;
-    width: 299.46px;
-    height: 41.46px;
-    font-size: 32px;
+    max-width: 299.46px;
+    max-height: 41.46px;
+    font-size: clamp(25px, 28px, 32px);
     line-height: 44px;
   }
 
@@ -789,6 +790,7 @@ footer {
     width: 255px;
     height: 24px;
     font-size: 22px;
+    font-size: clamp(18px, 20px, 22px);
     line-height: 43px;
     text-align: left;
   }
