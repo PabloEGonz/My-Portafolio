@@ -463,6 +463,10 @@ form {
   margin-left: 24px;
 }
 
+label {
+  display: none;
+}
+
 form input {
   height: 28px;
   width: 90%;
