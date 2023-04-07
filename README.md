@@ -16,6 +16,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [📹 Video Walkthrough](#walkthrough)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -64,6 +65,14 @@ My portafolio with information about me and my abilities.
 > You can find the Live demo at:
 
 - https://pabloegonz.github.io
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📹 Video Walkthrough <a name="walkthrough"></a>
+
+> You can find the video walkthrough at:
+
+- https://www.loom.com/share/1b79379246b64ae5a021ca0612912d69
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -121,8 +130,8 @@ Open index.html using live server extention.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Add a desktop media query
-- [ ] Add more styling
+- [ ] Implement bootstrap
+- [ ] Improve logo and its animation
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
