@@ -1,6 +1,8 @@
-let burger = document.querySelector('#menu');
-let opts = document.querySelector('.option');
+const burger = document.querySelector('.menu');
+const opts = document.querySelector('.option');
+const close = document.querySelector('.close');
 
-burger.addEventListener('click', () =>{
-
-});
+burger.onclick =() => {
+    console.log(burger)
+    opts.classList.add('display')
+};
