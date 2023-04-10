@@ -22,8 +22,18 @@ header {
   margin: 0 25px 0 0;
 }
 
-nav a {
+.option {
   display: none;
+}
+
+#email-icon {
+  display: none;
+}
+
+.menu-display {
+  display: flex !important;
+  width: 100%;
+  height: 1005;
 }
 
 #logo {
