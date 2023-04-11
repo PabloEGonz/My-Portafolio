@@ -313,17 +313,24 @@ li {
   margin-bottom: 25%;
 }
 .popup {
-  position: fixed;
+  top: 0;
+  position: absolute;
   height: 90vh;
   width: 90vw;
   background-color: red;
-  margin: auto;
   display: flex;
   flex-direction: column;
+  margin: auto ;
 }
-.close-popup img {
-  height: 5px;
-  width: 4px;
+.close-popup{
+display: flex;
+
+}
+#middle .close-popup img {
+  position: absolute;
+  justify-self: end;
+  height: 15px;
+  width: 14px;
   background-color: pink;
 }
 
@@ -874,10 +881,11 @@ footer {
     width: 100%;
     flex-direction: row;
     align-items: start;
+    padding-bottom: 10%;
   }
 
   #last h2 {
-    margin: 100px 0 0 8%;
+    margin: 100px 0 0 10%;
     width: 420px;
     height: 256px;
     font-size: 40px;
@@ -889,7 +897,7 @@ footer {
   form {
     width: 50%;
     height: 330px;
-    margin: 100px 0 0 5%;
+    margin: 100px 0 0 8%;
   }
 
   form input {
