@@ -13,14 +13,19 @@
     <link rel="stylesheet" href="style.css" />
     <title>My Portafolio Pablo Gonzalez</title>
   </head>
-  <body>
+  <body class="body">
     <header>
       <a id="logo" href="index.html">Pablo Gonzalez</a>
       <nav>
-        <img id="menu" src="images/Union.png" alt="Menue bar" />
-        <a><h3>Portafolio</h3></a>
-        <a><h3>About</h3></a>
-        <a><h3>Contact</h3></a>
+        <img class="menu mobile" src="images/Union.png" alt="Menu bar" />
+        <div class="option">
+          <span class="close mobile"
+            ><img src="images/close-icon.png" alt="close button" />
+          </span>
+          <a href="#portafolio"><h3 class="close">Portafolio</h3></a>
+          <a href="#about"><h3 class="close">About</h3></a>
+          <a href="#contact"><h3 class="close">Contact</h3></a>
+        </div>
         <a id="email-icon"
           ><img src="images/mail-icon.png" alt="mail-icon"
         /></a>
@@ -85,7 +90,7 @@
       </section>
     </main>
     <section id="middle">
-      <h2>My Recent Works</h2>
+      <h2 id="portafolio">My Recent Works</h2>
       <div class="border-animation"></div>
       <img src="images/yoga-img.png" alt="yoga image" />
       <div class="multi-post">
@@ -185,7 +190,7 @@
       </div>
       <div id="about-me">
         <div id="text-aboutme">
-          <h2>About me</h2>
+          <h2 id="about">About me</h2>
           <p>
             Hello I’m a software developer! I can help you build a product ,
             feature or website Look through some of my work and experience! If
@@ -231,7 +236,7 @@
       </div>
     </section>
     <section id="last">
-      <h2>
+      <h2 id="contact">
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </h2>
@@ -299,5 +304,6 @@
         </li>
       </ul>
     </footer>
+    <script src="index.js" type="text/javaScript"></script>
   </body>
 </html>

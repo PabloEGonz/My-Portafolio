@@ -43,7 +43,7 @@ My portafolio with information about me and my abilities.
 
 ### Tech Stack <a name="tech-stack"></a>
 
-- HTML & CSS.
+- HTML, CSS & JavaScript.
 
 <details>
   <summary>Client</summary>
@@ -125,6 +125,13 @@ Open index.html using live server extention.
 - GitHub: [@PabloEGonz](https://github.com/PabloEGonz)
 - Twitter: [@PabloEzGon](https://twitter.com/PabloEzGon)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/pablo-ezequiel-gonz%C3%A1lez-ramos-b9b854265)
+
+👤 Steven Wafeek
+
+- GitHub: [StevenWafeek](https://github.com/StevenWafeek)
+- Twitter: [steven_hakeem](https://twitter.com/steven_hakeem)
+- LinkedIn: [steven wafeek
+  ](https://www.linkedin.com/in/steven-wafeek-b629341b6/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
