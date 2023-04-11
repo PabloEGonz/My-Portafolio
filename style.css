@@ -10,6 +10,10 @@ body {
   padding: 0;
 }
 
+.overflow {
+  overflow-y: hidden;
+}
+
 header {
   background: #3c3a39;
   width: 100%;
@@ -33,14 +37,14 @@ header {
 }
 
 .display {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   display: flex;
   flex-direction: column;
   justify-content: start;
   width: 100%;
-  height: 80vh;
+  height: 100%;
   background-color: #3c3a39;
 }
 
