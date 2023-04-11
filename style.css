@@ -312,6 +312,9 @@ li {
 .project-container {
   margin-bottom: 25%;
 }
+.popup-window-open{
+  display: flex;
+}
 .popup {
   position: fixed;
   height: 90vh;
