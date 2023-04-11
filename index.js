@@ -14,3 +14,7 @@ for (let i = 0; i < close.length; i += 1) {
     body.classList.remove('overflow');
   };
 }
+
+// pop up window
+
+const popup = document.getElementsByClassName('popup');
