@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -35,22 +36,25 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  display: flex !important;
+  display: flex;
   flex-direction: column;
- justify-content: start;
+  justify-content: start;
   width: 100%;
   height: 80vh;
   background-color: #3c3a39;
 }
 
-.display a h3{
+.display a {
+  text-decoration: none;
+}
+
+.display a h3 {
   color: #fff5e1;
   font-size: 32px;
   border-bottom: 2px solid #6f6c6b;
   margin: 0 7% 0 7%;
-  padding: 5% 0 3% 5% ;
-  /* margin-top: -5%;
-  margin-bottom: -5%; */
+  padding: 5% 0 3% 5%;
+  cursor: pointer;
 }
 
 .close {
@@ -569,16 +573,22 @@ footer {
     transform: scale(1.1);
   }
 
-  #menu {
-    display: none;
+  .mobile {
+    display: none !important;
+  }
+
+  .option {
+    display: contents;
   }
 
   nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
-    width: 455px;
+    width: 485px;
+    margin-right: 10%;
   }
 
   nav a {
@@ -592,7 +602,8 @@ footer {
     height: 20px;
   }
 
-  nav a img {
+  #email-icon {
+    display: contents;
     width: 25px;
     height: 22px;
   }
@@ -643,6 +654,15 @@ footer {
     width: 40px;
     height: 200px;
     margin: 0 5% 0 0;
+  }
+
+  .twitter-icon,
+  .medium-icon {
+    padding-left: 5px;
+  }
+
+  .medium-icon {
+    margin-top: -15px;
   }
 
   #middle {
@@ -813,14 +833,14 @@ footer {
 
   #knowledge li:nth-child(3) {
     background-position: left 0 bottom 47%;
-    padding-right: 12%;
+    padding-right: 10%;
   }
 
   .main-list {
     padding: 0 0 0 0;
     max-width: 299.46px;
     max-height: 41.46px;
-    font-size: clamp(25px, 28px, 32px);
+    font-size: 32px;
     line-height: 44px;
   }
 
@@ -828,7 +848,6 @@ footer {
     width: 255px;
     height: 24px;
     font-size: 22px;
-    font-size: clamp(18px, 20px, 22px);
     line-height: 43px;
     text-align: left;
   }
@@ -882,5 +901,9 @@ footer {
 
   #socials-footer {
     padding: 0;
+  }
+
+  #socials-footer .medium-icon {
+    margin-top: 0;
   }
 }
