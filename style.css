@@ -312,6 +312,9 @@ li {
 .project-container {
   margin-bottom: 25%;
 }
+.popup-window-open{
+  display: flex;
+}
 .popup {
   top: 0;
   position: absolute;
