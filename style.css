@@ -277,6 +277,7 @@ li {
   background-color: #ff6b00;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 #middle button a {
@@ -312,29 +313,34 @@ li {
 .project-container {
   margin-bottom: 25%;
 }
-.popup-window-open{
+.popup-window {
   display: flex;
+  flex-direction: column;
 }
+
 .popup {
-  top: 0;
   position: absolute;
   height: 90vh;
   width: 90vw;
   background-color: red;
+  display: none;
+}
+
+.openpopup {
   display: flex;
   flex-direction: column;
-  margin: auto ;
 }
-.close-popup{
-display: flex;
 
+.close-popup {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin: 5% 5% 0 0;
+  cursor: pointer;
 }
 #middle .close-popup img {
-  position: absolute;
-  justify-self: end;
-  height: 15px;
-  width: 14px;
-  background-color: pink;
+  height: 16px;
+  width: 16px;
 }
 
 .projects {
@@ -522,6 +528,7 @@ form {
   flex-direction: column;
   align-items: center;
   padding: 0;
+  justify-content: center;
   gap: 24px;
   width: 327px;
   height: 330px;
