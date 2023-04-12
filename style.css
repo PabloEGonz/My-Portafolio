@@ -317,17 +317,44 @@ li {
   width: 100%;
 }
 
-.popup {
-  position: absolute;
-  height: 90vh;
-  width: 90vw;
-  background-color: #fff;
+.popup-container {
+  position: fixed;
+  background-color: #808080de;
+  width: 100%;
+  height: 100%;
   display: none;
+  z-index: 99;
 }
 
 .openpopup {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+.popup {
+  position: fixed;
+  top: 5vh;
+  height: 90vh;
+  width: 90vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-popup {
+  display: flex;
+  align-self: self-end;
+  margin: 5% 5% 0 0;
+  cursor: pointer;
+}
+
+#middle .close-popup img {
+  height: 16px;
+  width: 16px;
 }
 
 .popup #name {
@@ -339,9 +366,22 @@ li {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  margin-top: -5%;
+}
+
+.popup ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 10px;
+  width: 314px;
+  height: 40px;
+  margin: 0 0 10% 0;
 }
 
 .popup .techs {
+  padding: 10px 12px;
   color: #3c3a39;
   font-family: "Poppins";
   font-style: normal;
@@ -354,6 +394,7 @@ li {
 .popup #image {
   width: 311px;
   height: 220px;
+  margin: 5% 0 5% 0;
 }
 
 .popup #description {
@@ -367,8 +408,9 @@ li {
 
 .project-links {
   display: flex;
-  width: 100%;
-  gap: 2%;
+  width: 86%;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
 .popup button {
@@ -388,24 +430,13 @@ li {
 .popup #live {
   background-image: url("images/live-link-icon.png");
   padding: 0 10% 0 5%;
+  width: 129px;
 }
 
 .popup #repo {
   background-image: url("images/repo-link-icon.png");
   padding: 0 10% 0 5%;
-  width: 45%;
-}
-
-.close-popup {
-  display: flex;
-  align-self: center;
-  justify-self: center;
-  margin: 5% 5% 0 0;
-  cursor: pointer;
-}
-#middle .close-popup img {
-  height: 16px;
-  width: 16px;
+  width: 158px;
 }
 
 .projects {
@@ -772,8 +803,65 @@ footer {
     gap: 3%;
     margin: 5% 0 0 0;
   }
+  .popup {
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    grid-template-rows: 15% 10% 1fr 15%;
+    padding-left: 2%;
+    height: 80vh;
+    width: 80vw;
+    top: 10vh;
+  }
 
-  .popup-window {
+  .close-popup {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    margin: 0;
+  }
+
+  .popup #name {
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 2%;
+    width: 90%;
+  }
+  .popup ul {
+    margin-bottom: 3%;
+    grid-column: 1 / span 2;
+    grid-row: 2 / 3;
+  }
+  .popup .techs {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .popup #image {
+    grid-column: 1 / 2;
+    grid-row: 3 / span 2;
+    width: 90%;
+    height: auto;
+    margin: 0;
+  }
+
+  .popup #description {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    align-self: start;
+    padding: 5%;
+  }
+
+  .project-links {
+    width: 80%;
+    justify-self: start;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    margin-bottom: 20%;
+    padding: 3%;
   }
 
   #middle h2 {
@@ -800,8 +888,8 @@ footer {
   }
 
   #middle img:hover {
-    transform: scale(1.08);
-    translate: -8%;
+    transform: scale(1.001);
+    translate: -0.5%;
   }
 
   #middle h3 {
@@ -873,7 +961,8 @@ footer {
   }
 
   #middle button:hover > *,
-  #last button:hover {
+  #last button:hover,
+  .popup button:hover {
     color: #ff6b00;
   }
 
