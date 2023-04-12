@@ -1,13 +1,13 @@
 const projects = [project1 = {
-  name: 'project 1',
+  name: 'Project 1',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
   image: 'images/popup-image.png',
-  techs: ['HTML', 'Css', 'Bootstrap', 'Ruby'],
+  techs: ['HTML', 'Bootstrap', 'Ruby'],
   live: '#',
   repo: '#'
 },
 project2 = {
-  name: 'project 2',
+  name: 'Project 2',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Css', 'Bootstrap'],
@@ -15,7 +15,7 @@ project2 = {
   repo: '#'
 },
 project3 = {
-  name: 'project 3',
+  name: 'Project 3',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Bootstrap', 'Ruby'],
@@ -23,7 +23,7 @@ project3 = {
   repo: '#'
 },
 project4 = {
-  name: 'project 4',
+  name: 'Project 4',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Bootstrap', 'Ruby'],
@@ -31,7 +31,7 @@ project4 = {
   repo: '#'
 },
 project5 = {
-  name: 'project 5',
+  name: 'Project 5',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Bootstrap', 'Ruby'],
@@ -39,7 +39,7 @@ project5 = {
   repo: '#'
 },
 project6 = {
-  name: 'project 6',
+  name: 'Project 6',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Css', 'Bootstrap', 'Ruby'],
@@ -47,7 +47,7 @@ project6 = {
   repo: '#'
 },
 project7 = {
-  name: 'project 7',
+  name: 'Project 7',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Bootstrap', 'Ruby'],
@@ -78,7 +78,7 @@ for (let i = 0; i < close.length; i += 1) {
 // pop up window
 
 const popupBtn = document.getElementsByClassName('popup-button');
-const popup = document.querySelector('.popup');
+const popup = document.querySelector('.popup-container');
 const closePopup = document.querySelector('.close-popup');
 
 const nameH = document.querySelector('#name');
@@ -99,16 +99,14 @@ for (let j = 0; j < popupBtn.length; j += 1) {
     live.href = projects[j].live;
     repo.href = projects[j].repo;
 
-    console.log();
-
     for (let t = 0; t < projects[j].techs.length; t += 1) {
       techsLi[t].innerHTML = projects[j].techs[t];
     }
-
-
+    body.classList.add('overflow');
   };
 }
 
 closePopup.onclick = () => {
   popup.classList.remove('openpopup');
+  body.classList.remove('overflow');
 };
