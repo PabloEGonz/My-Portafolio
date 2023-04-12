@@ -17,4 +17,17 @@ for (let i = 0; i < close.length; i += 1) {
 
 // pop up window
 
-const popup = document.getElementsByClassName('popup');
+const popupBtn = document.getElementsByClassName('popup-button');
+const popup = document.querySelector('.popup');
+const closePopup = document.querySelector('.close-popup');
+
+
+for (let j = 0; j < popupBtn.length; j += 1) {
+  popupBtn[j].onclick = () => {
+    popup.classList.add('openpopup');
+  };
+}
+
+closePopup.onclick = () => {
+  popup.classList.remove('openpopup');
+  };
