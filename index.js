@@ -54,8 +54,7 @@ project7 = {
   live : '',
   repo : ''
 }
-]
-console.log(projects[0]);
+];
 
 
 
@@ -82,10 +81,20 @@ const popupBtn = document.getElementsByClassName('popup-button');
 const popup = document.querySelector('.popup');
 const closePopup = document.querySelector('.close-popup');
 
+const nameH = document.querySelector('#image');
+const techsLi = document.getElementsByClassName('.techs');
+const imageImg = document.querySelector('#image');
+const description = document.querySelector('#description');
+const live = document.querySelector('#live');
+const repo = document.querySelector('#repo');
+
 
 for (let j = 0; j < popupBtn.length; j += 1) {
   popupBtn[j].onclick = () => {
     popup.classList.add('openpopup');
+
+    console.log(projects[j].name);
+
   };
 }
 
