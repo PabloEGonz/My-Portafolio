@@ -135,3 +135,12 @@ window.onload = () => {
     }
   }
 };
+const email = document.querySelector('#email');
+const form = document.querySelector('.form');
+const button = document.querySelector('.form-button');
+
+form.addEventListener('submit', (e) =>{
+  e.preventDefult()
+  
+})
+
