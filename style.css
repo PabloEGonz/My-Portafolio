@@ -625,11 +625,9 @@ form {
   align-items: center;
   padding: 0;
   justify-content: center;
-  gap: 24px;
   width: 327px;
-  height: 330px;
-  top: 400px;
   margin-left: 24px;
+  margin-bottom: 20%;
 }
 
 label {
@@ -647,6 +645,7 @@ form input {
   border: none;
   border-bottom: 1px solid #dbd8d7;
   padding: 20px 0 20px 15px;
+  margin-bottom: 1.5vw;
 }
 
 form textarea {
@@ -666,6 +665,11 @@ form textarea {
 input[type="text"],
 textarea[type="text"]::-webkit-input-placeholder {
   color: #3c3a39;
+}
+
+.error {
+  color: #af0606;
+  font-size: 15px;
 }
 
 footer {
@@ -1092,7 +1096,6 @@ footer {
 
   form {
     width: 50%;
-    height: 330px;
     margin: 100px 0 0 8%;
   }
 
@@ -1110,6 +1113,11 @@ footer {
     height: 114px;
     padding-left: 10px;
     width: 100%;
+  }
+
+  .error {
+    display: inline;
+    font-size: 20px;
   }
 
   footer {
