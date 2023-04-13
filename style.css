@@ -208,6 +208,7 @@ li {
 #middle .multi-post {
   margin-top: 0;
   padding: 0;
+  width: 327px;
 }
 
 #middle h3 {
@@ -218,6 +219,9 @@ li {
   font-size: 32px;
   line-height: 44px;
   color: #091e42;
+  margin-top: 5%;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px rgb(155, 146, 146);
 }
 
 #middle p {
@@ -226,10 +230,7 @@ li {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  height: 147px;
-  width: 327px;
-  left: 0;
-  top: 48px;
+  margin-top: 0;
 }
 
 .tools {
@@ -238,8 +239,6 @@ li {
   align-items: center;
   padding: 0;
   gap: 10px;
-  width: 314px;
-  height: 40px;
 }
 
 .tools li {
@@ -450,28 +449,24 @@ li {
   color: #fff;
   height: 386px;
   width: 327px;
-  left: 0;
-  top: 0;
   background-image: url("images/placeholder.png");
   display: flex;
   flex-direction: column;
   align-items: center;
+  column-gap: 20%;
 }
 
 #middle .projects h3 {
   margin: auto;
   height: 81px;
   width: 295px;
-  left: 16px;
-  top: 8px;
   color: #fff;
+  margin: 5% 0 0 0;
 }
 
 #middle .projects p {
-  height: 99px;
   width: 295px;
-  left: 16px;
-  top: 101px;
+  margin-bottom: 0;
 }
 
 #middle .projects li {
@@ -814,9 +809,9 @@ footer {
   .popup {
     display: grid;
     grid-template-columns: 58% 1fr;
-    grid-template-rows: 15% 12% 1fr 1fr 15%;
-    padding-left: 2%;
-    height: 87vh;
+    grid-template-rows: 13% 10% 1fr 1fr 20% 5%;
+    padding-left: 1vw;
+    height: 90vh;
     width: 78vw;
     top: 7vh;
   }
@@ -853,14 +848,14 @@ footer {
   .popup #image {
     grid-column: 1 / 2;
     grid-row: 3 / span 4;
-    width: 42.3vw;
+    width: 44.3vw;
     height: auto;
     margin: 0;
   }
 
   .popup #description {
     width: 100%;
-    height: 80%;
+    height: 100%;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
     align-self: start;
@@ -873,24 +868,25 @@ footer {
   }
 
   .popup #second-paragraph {
-    width: 100%;
-    height: 80%;
+    width: 95%;
+    height: 95%;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
-    display: block;
+    display: flex;
     grid-column: 2 / 3;
     grid-row: 4 / 5;
     align-self: start;
     padding: 0 5vw 0 1vw;
+    margin: 0;
   }
 
   .project-links {
     width: 90%;
     grid-column: 2 / 3;
     grid-row: 5 / 6;
-    margin-bottom: 0;
-    padding: 5% 0 9% 1vw;
+    margin-bottom: 5%;
+    padding: 0 0 9% 1vw;
   }
 
   .popup #live {
@@ -932,25 +928,21 @@ footer {
   }
 
   #middle h3 {
-    margin-top: 15px;
     font-size: 40px;
     line-height: 52px;
     width: 448px;
-    height: 48px;
   }
 
   #middle p {
     font-size: 20px;
     line-height: 28px;
     width: 448px;
-    height: 140px;
   }
 
   .project-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(251px, 359px));
     grid-template-rows: repeat(2, minmax(305px, 435px));
-    justify-content: center;
     row-gap: 7%;
     margin: 5% 0 5% 0;
   }
@@ -970,18 +962,14 @@ footer {
   }
 
   #middle .projects h3 {
-    margin-top: 40%;
+    margin: 18% 0 7% 0;
     font-size: 32px;
     line-height: 44px;
-    max-width: 337px;
-    max-height: 81px;
   }
 
   #middle .projects p {
     font-size: 17px;
     line-height: 24px;
-    max-width: 337px;
-    max-height: 72px;
   }
 
   .popup button:hover {
@@ -999,7 +987,7 @@ footer {
   }
 
   #middle .projects button {
-    margin-top: 103.39%;
+    margin-top: 103.24%;
   }
 
   #middle button:hover,
