@@ -135,3 +135,21 @@ window.onload = () => {
     }
   }
 };
+const email = document.querySelector('#email');
+const form = document.querySelector('.form');
+const error = document.querySelector('.error');
+
+form.addEventListener('submit', (e) => {
+  const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+
+  if (!emailRegex.test(email.value)) {
+    e.preventDefault();
+    error.innerHTML = 'Invalid email! The email must be in lowercase.';
+  } else {
+    form.submit();
+  }
+});
+
+email.onclick = () => {
+  error.innerHTML = '';
+};
