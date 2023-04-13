@@ -95,7 +95,7 @@ const live = document.querySelector('#live');
 const repo = document.querySelector('#repo');
 
 for (let j = 0; j < popupBtn.length; j += 1) {
-  
+
   popupBtn[j].onclick = () => {
     popup.classList.add('openpopup');
 
@@ -125,17 +125,13 @@ const cardDescription = document.getElementsByClassName('card-descrtiption');
 const cardTechs = document.getElementsByClassName('card-techs');
 
 window.onload = () => {
-  console.log(cardTechs.length);
-  console.log(cardTechs);
   let count = 0;
   for (let l = 0; l < cardTitle.length; l += 1) {
     cardTitle[l].innerHTML = projects[l].name;
     cardDescription[l].innerHTML = projects[l].description;
 
     for (let s = 0; s < projects[l].techs.length; s += 1) {
-
       cardTechs[count].innerHTML = projects[l].techs[s];
-      console.log(projects[l].techs.length);
       count += 1;
     }
   };
