@@ -212,7 +212,6 @@ li {
 }
 
 #middle h3 {
-  margin-bottom: -5px;
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
@@ -457,7 +456,6 @@ li {
 }
 
 #middle .projects h3 {
-  margin: auto;
   height: 81px;
   width: 295px;
   color: #fff;

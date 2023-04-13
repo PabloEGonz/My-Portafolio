@@ -95,7 +95,6 @@ const live = document.querySelector('#live');
 const repo = document.querySelector('#repo');
 
 for (let j = 0; j < popupBtn.length; j += 1) {
-
   popupBtn[j].onclick = () => {
     popup.classList.add('openpopup');
 
@@ -134,5 +133,5 @@ window.onload = () => {
       cardTechs[count].innerHTML = projects[l].techs[s];
       count += 1;
     }
-  };
-}
+  }
+};
