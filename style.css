@@ -187,11 +187,6 @@ li {
 
 #middle {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5%;
 }
 
 #middle h2 {
@@ -213,16 +208,19 @@ li {
 #middle .multi-post {
   margin-top: 0;
   padding: 0;
+  width: 327px;
 }
 
 #middle h3 {
-  margin-bottom: -5px;
   font-family: "Crete Round", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
   color: #091e42;
+  margin-top: 5%;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 2px rgb(155, 146, 146);
 }
 
 #middle p {
@@ -231,10 +229,7 @@ li {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  height: 147px;
-  width: 327px;
-  left: 0;
-  top: 48px;
+  margin-top: 0;
 }
 
 .tools {
@@ -243,8 +238,6 @@ li {
   align-items: center;
   padding: 0;
   gap: 10px;
-  width: 314px;
-  height: 40px;
 }
 
 .tools li {
@@ -256,6 +249,20 @@ li {
   line-height: 20px;
   color: #091e42;
   border: 1px solid #8993a4;
+}
+
+.popup button {
+  background-color: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background-repeat: no-repeat;
+  text-align: left;
+  background-position: right 10% bottom 50%;
+  height: 48px;
 }
 
 #last button {
@@ -277,6 +284,7 @@ li {
   background-color: #ff6b00;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 #middle button a {
@@ -313,32 +321,150 @@ li {
   margin-bottom: 25%;
 }
 
+.popup-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.popup-container {
+  position: fixed;
+  background-color: #80808071;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 99;
+  backdrop-filter: blur(5px);
+}
+
+.openpopup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+.popup {
+  position: fixed;
+  top: 4vh;
+  width: 90vw;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4%;
+  text-align: left;
+}
+
+.close-popup {
+  display: flex;
+  align-self: self-end;
+  margin: 5% 5% 0 0;
+  cursor: pointer;
+}
+
+#middle .close-popup img {
+  height: 16px;
+  width: 16px;
+}
+
+.popup #name {
+  color: #172b4d;
+  width: 259px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin: -7% 0 2vh 0;
+}
+
+.popup ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 10px;
+  width: 314px;
+  height: 40px;
+  margin: 0 0 2vh 0;
+}
+
+.popup .techs {
+  padding: 10px 12px;
+  color: #3c3a39;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  border: 1px solid #3c3a39;
+}
+
+.popup #image {
+  width: 311px;
+  height: 220px;
+  margin: 0;
+}
+
+.popup #description {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  height: 220px;
+  width: 311px;
+  margin: 1vh 0 1vh 0;
+}
+
+.popup #second-paragraph {
+  display: none;
+}
+
+.project-links {
+  display: flex;
+  width: 95%;
+  margin: 0 0 2vh 0;
+}
+
+.popup #live {
+  background-image: url("images/live-link-icon.png");
+  padding: 0 10% 0 5%;
+  width: 129px;
+}
+
+.popup #repo {
+  background-image: url("images/repo-link-icon.png");
+  padding: 0 10% 0 5%;
+  width: 158px;
+  margin-left: 5%;
+}
+
 .projects {
   color: #fff;
   height: 386px;
   width: 327px;
-  left: 0;
-  top: 0;
   background-image: url("images/placeholder.png");
   display: flex;
   flex-direction: column;
   align-items: center;
+  column-gap: 20%;
 }
 
 #middle .projects h3 {
-  margin: auto;
   height: 81px;
   width: 295px;
-  left: 16px;
-  top: 8px;
   color: #fff;
+  margin: 5% 0 0 0;
 }
 
 #middle .projects p {
-  height: 99px;
   width: 295px;
-  left: 16px;
-  top: 101px;
+  margin-bottom: 0;
 }
 
 #middle .projects li {
@@ -498,6 +624,7 @@ form {
   flex-direction: column;
   align-items: center;
   padding: 0;
+  justify-content: center;
   gap: 24px;
   width: 327px;
   height: 330px;
@@ -669,11 +796,105 @@ footer {
     margin-top: -15px;
   }
 
-  #middle {
+  .popup-window {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3%;
     margin: 5% 0 0 0;
+  }
+
+  .popup {
+    display: grid;
+    grid-template-columns: 58% 1fr;
+    grid-template-rows: 13% 10% 1fr 1fr 20% 5%;
+    padding-left: 1vw;
+    height: 90vh;
+    width: 78vw;
+    top: 7vh;
+  }
+
+  .close-popup {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    margin: 0;
+  }
+
+  .popup #name {
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 4%;
+    width: 90%;
+  }
+
+  .popup ul {
+    margin-bottom: 4%;
+    grid-column: 1 / span 2;
+    grid-row: 2 / 3;
+  }
+
+  .popup .techs {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .popup #image {
+    grid-column: 1 / 2;
+    grid-row: 3 / span 4;
+    width: 44.3vw;
+    height: auto;
+    margin: 0;
+  }
+
+  .popup #description {
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    align-self: start;
+    justify-self: start;
+    padding: 0 5vw 0 1vw;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .popup #second-paragraph {
+    width: 95%;
+    height: 95%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    align-self: start;
+    padding: 0 5vw 0 1vw;
+    margin: 0;
+  }
+
+  .project-links {
+    width: 90%;
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    margin-bottom: 5%;
+    padding: 0 0 9% 1vw;
+  }
+
+  .popup #live {
+    padding: 0 5% 0 3%;
+  }
+
+  .popup #repo {
+    padding: 0 5% 0 3%;
+    width: 158px;
+    margin-left: 5%;
   }
 
   #middle h2 {
@@ -700,30 +921,26 @@ footer {
   }
 
   #middle img:hover {
-    transform: scale(1.08);
-    translate: -8%;
+    transform: scale(1.001);
+    translate: -0.5%;
   }
 
   #middle h3 {
-    margin-top: 15px;
     font-size: 40px;
     line-height: 52px;
     width: 448px;
-    height: 48px;
   }
 
   #middle p {
     font-size: 20px;
     line-height: 28px;
     width: 448px;
-    height: 140px;
   }
 
   .project-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(251px, 359px));
     grid-template-rows: repeat(2, minmax(305px, 435px));
-    justify-content: center;
     row-gap: 7%;
     margin: 5% 0 5% 0;
   }
@@ -743,18 +960,18 @@ footer {
   }
 
   #middle .projects h3 {
-    margin-top: 40%;
+    margin: 18% 0 7% 0;
     font-size: 32px;
     line-height: 44px;
-    max-width: 337px;
-    max-height: 81px;
   }
 
   #middle .projects p {
     font-size: 17px;
     line-height: 24px;
-    max-width: 337px;
-    max-height: 72px;
+  }
+
+  .popup button:hover {
+    background-color: #eec980 !important;
   }
 
   #last button {
@@ -762,19 +979,19 @@ footer {
     width: 122px;
   }
 
+  #middle button:hover > *,
+  #last button:hover {
+    color: #ff6b00;
+  }
+
   #middle .projects button {
-    margin-top: 103.39%;
+    margin-top: 103.24%;
   }
 
   #middle button:hover,
   #last button:hover {
     background-color: #fff5e1;
     transform: scale(1.2);
-  }
-
-  #middle button:hover > *,
-  #last button:hover {
-    color: #ff6b00;
   }
 
   #about-me {
@@ -860,10 +1077,11 @@ footer {
     width: 100%;
     flex-direction: row;
     align-items: start;
+    padding-bottom: 10%;
   }
 
   #last h2 {
-    margin: 100px 0 0 8%;
+    margin: 100px 0 0 10%;
     width: 420px;
     height: 256px;
     font-size: 40px;
@@ -875,7 +1093,7 @@ footer {
   form {
     width: 50%;
     height: 330px;
-    margin: 100px 0 0 5%;
+    margin: 100px 0 0 8%;
   }
 
   form input {
