@@ -1,14 +1,16 @@
 const projects = [{
-  name: 'Project 1',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
+  name: 'Multi Post Stories',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
   image: 'images/popup-image.png',
-  techs: ['HTML', 'Bootstrap', 'Ruby'],
+  techs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
   live: '#',
   repo: '#',
 },
 {
   name: 'Project 2',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Css', 'Bootstrap'],
   live: '#',
@@ -16,7 +18,8 @@ const projects = [{
 },
 {
   name: 'Project 3',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Bootstrap', 'Ruby'],
   live: '#',
@@ -24,7 +27,8 @@ const projects = [{
 },
 {
   name: 'Project 4',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Bootstrap', 'Ruby'],
   live: '#',
@@ -32,7 +36,8 @@ const projects = [{
 },
 {
   name: 'Project 5',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Bootstrap', 'Ruby'],
   live: '#',
@@ -40,7 +45,8 @@ const projects = [{
 },
 {
   name: 'Project 6',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Css', 'Bootstrap', 'Ruby'],
   live: '#',
@@ -48,7 +54,8 @@ const projects = [{
 },
 {
   name: 'Project 7',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
+  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+  paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Bootstrap', 'Ruby'],
   live: '#',
@@ -83,6 +90,7 @@ const nameH = document.querySelector('#name');
 const techsLi = document.getElementsByClassName('techs');
 const imageImg = document.querySelector('#image');
 const description = document.querySelector('#description');
+const paragr = document.querySelector('#second-paragraph');
 const live = document.querySelector('#live');
 const repo = document.querySelector('#repo');
 
@@ -93,6 +101,7 @@ for (let j = 0; j < popupBtn.length; j += 1) {
     nameH.innerHTML = projects[j].name;
     imageImg.src = projects[j].image;
     description.innerHTML = projects[j].description;
+    paragr.innerHTML = projects[j].paragraph;
     live.href = projects[j].live;
     repo.href = projects[j].repo;
 
