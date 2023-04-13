@@ -1,62 +1,60 @@
-const projects = [project1 = {
+const projects = [{
   name: 'Project 1',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Bootstrap', 'Ruby'],
   live: '#',
-  repo: '#'
+  repo: '#',
 },
-project2 = {
+{
   name: 'Project 2',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Css', 'Bootstrap'],
   live: '#',
-  repo: '#'
+  repo: '#',
 },
-project3 = {
+{
   name: 'Project 3',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Bootstrap', 'Ruby'],
   live: '#',
-  repo: '#'
+  repo: '#',
 },
-project4 = {
+{
   name: 'Project 4',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Bootstrap', 'Ruby'],
   live: '#',
-  repo: '#'
+  repo: '#',
 },
-project5 = {
+{
   name: 'Project 5',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Bootstrap', 'Ruby'],
   live: '#',
-  repo: '#'
+  repo: '#',
 },
-project6 = {
+{
   name: 'Project 6',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Css', 'Bootstrap', 'Ruby'],
   live: '#',
-  repo: '#'
+  repo: '#',
 },
-project7 = {
+{
   name: 'Project 7',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In tellus integer feugiat scelerisque. Sed felis eget velit aliquet sagittis id consectetur purus. Sodales neque sodales ut etiam sit.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Bootstrap', 'Ruby'],
   live: '#',
-  repo: '#'
-}
+  repo: '#',
+},
 ];
-
-
 
 const burger = document.querySelector('.menu');
 const opts = document.querySelector('.option');
@@ -87,7 +85,6 @@ const imageImg = document.querySelector('#image');
 const description = document.querySelector('#description');
 const live = document.querySelector('#live');
 const repo = document.querySelector('#repo');
-
 
 for (let j = 0; j < popupBtn.length; j += 1) {
   popupBtn[j].onclick = () => {
