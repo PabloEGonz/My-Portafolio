@@ -253,6 +253,20 @@ li {
   border: 1px solid #8993a4;
 }
 
+.popup button {
+  background-color: #ff6b00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  background-repeat: no-repeat;
+  text-align: left;
+  background-position: right 10% bottom 50%;
+  height: 48px;
+}
+
 #last button {
   font-family: "Inter", serif;
   font-style: normal;
@@ -308,6 +322,7 @@ li {
 .project-container {
   margin-bottom: 25%;
 }
+
 .popup-window {
   display: flex;
   flex-direction: column;
@@ -319,11 +334,12 @@ li {
 
 .popup-container {
   position: fixed;
-  background-color: #808080de;
+  background-color: #80808071;
   width: 100%;
   height: 100%;
   display: none;
   z-index: 99;
+  backdrop-filter: blur(5px);
 }
 
 .openpopup {
@@ -361,7 +377,7 @@ li {
   color: #172b4d;
   width: 259px;
   height: 82px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -383,7 +399,7 @@ li {
 .popup .techs {
   padding: 10px 12px;
   color: #3c3a39;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -398,7 +414,7 @@ li {
 }
 
 .popup #description {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -411,20 +427,6 @@ li {
   width: 86%;
   justify-content: space-between;
   margin-top: 50px;
-}
-
-.popup button {
-  background-color: #ff6b00;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #fff;
-  background-repeat: no-repeat;
-  text-align: left;
-  background-position: right 10% bottom 50%;
-  height: 48px;
 }
 
 .popup #live {
@@ -803,6 +805,7 @@ footer {
     gap: 3%;
     margin: 5% 0 0 0;
   }
+
   .popup {
     display: grid;
     grid-template-columns: 55% 1fr;
@@ -829,11 +832,13 @@ footer {
     margin-top: 2%;
     width: 90%;
   }
+
   .popup ul {
     margin-bottom: 3%;
     grid-column: 1 / span 2;
     grid-row: 2 / 3;
   }
+
   .popup .techs {
     font-weight: 500;
     font-size: 15px;
@@ -945,9 +950,18 @@ footer {
     max-height: 72px;
   }
 
+  .popup button:hover {
+    background-color: #eec980 !important;
+  }
+
   #last button {
     align-self: self-start;
     width: 122px;
+  }
+
+  #middle button:hover > *,
+  #last button:hover {
+    color: #ff6b00;
   }
 
   #middle .projects button {
@@ -958,12 +972,6 @@ footer {
   #last button:hover {
     background-color: #fff5e1;
     transform: scale(1.2);
-  }
-
-  #middle button:hover > *,
-  #last button:hover,
-  .popup button:hover {
-    color: #ff6b00;
   }
 
   #about-me {
