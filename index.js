@@ -82,7 +82,7 @@ for (let i = 0; i < close.length; i += 1) {
 
 // pop up window
 
-const popupBtn = document.getElementsByClassName('popup-button');
+const popupBtn = document.getElementsByClassName('.popup-button');
 const popup = document.querySelector('.popup-container');
 const closePopup = document.querySelector('.close-popup');
 
@@ -95,7 +95,7 @@ const live = document.querySelector('#live');
 const repo = document.querySelector('#repo');
 
 for (let j = 0; j < popupBtn.length; j += 1) {
-  popupBtn[j].onclick = () => {
+  popupBtn[j].onClick = () => {
     popup.classList.add('openpopup');
 
     nameH.innerHTML = projects[j].name;
@@ -141,7 +141,7 @@ const error = document.querySelector('.error');
 const storedName = document.querySelector('#name-input');
 
 form.addEventListener('submit', (e) => {
-  const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+  const emailRegex = "/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/";
 
   if (!emailRegex.test(email.value)) {
     e.preventDefault();
