@@ -158,10 +158,9 @@ email.onclick = () => {
 // Local storage
 
 email.value = localStorage.getItem('email');
-storedName.value = localStorage.getItem('name')
+storedName.value = localStorage.getItem('name');
 
 form.addEventListener('input', () => {
-  localStorage.setItem("email", email.value);
-  localStorage.setItem("name", storedName.value);
-})
-
+  localStorage.setItem('email', email.value);
+  localStorage.setItem('name', storedName.value);
+});
