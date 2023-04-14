@@ -138,6 +138,7 @@ window.onload = () => {
 const email = document.querySelector('#email');
 const form = document.querySelector('.form');
 const error = document.querySelector('.error');
+const storedName = document.querySelector('#name-input');
 
 form.addEventListener('submit', (e) => {
   const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
@@ -153,3 +154,14 @@ form.addEventListener('submit', (e) => {
 email.onclick = () => {
   error.innerHTML = '';
 };
+
+// Local storage
+
+email.value = localStorage.getItem('email');
+storedName.value = localStorage.getItem('name')
+
+form.addEventListener('input', () => {
+  localStorage.setItem("email", email.value);
+  localStorage.setItem("name", storedName.value);
+})
+
