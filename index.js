@@ -139,6 +139,7 @@ const email = document.querySelector('#email');
 const form = document.querySelector('.form');
 const error = document.querySelector('.error');
 const storedName = document.querySelector('#name-input');
+const comments = document.querySelector('#text-box');
 
 form.addEventListener('submit', (e) => {
   const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
@@ -159,8 +160,10 @@ email.onclick = () => {
 
 email.value = localStorage.getItem('email');
 storedName.value = localStorage.getItem('name');
+comments.value = localStorage.getItem('comments');
 
 form.addEventListener('input', () => {
   localStorage.setItem('email', email.value);
   localStorage.setItem('name', storedName.value);
+  localStorage.setItem('comments', comments.value);
 });
