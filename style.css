@@ -199,6 +199,11 @@ li {
   border-bottom: 1px solid black;
 }
 
+.lead-image {
+  width: 90% !important;
+  height: auto !important;
+}
+
 #middle img {
   width: 327px;
   height: 237px;
@@ -939,6 +944,11 @@ footer {
     font-size: 20px;
     line-height: 28px;
     width: 448px;
+  }
+
+  .lead-image {
+    width: 40% !important;
+    height: auto !important;
   }
 
   .project-container {

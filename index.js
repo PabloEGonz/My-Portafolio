@@ -1,11 +1,11 @@
 const projects = [{
-  name: 'Multi Post Stories',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
+  name: 'December Countdown',
+  description: 'A December and Christmas countdown with anomations of snow falling',
   paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-  image: 'images/popup-image.png',
-  techs: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-  live: '#',
-  repo: '#',
+  image: './images/decemberCountdown.png',
+  techs: ['HTML', 'Css', 'JavaScript'],
+  live: 'https://decembercountdown.netlify.app/',
+  repo: 'https://github.com/PabloEGonz/decemberCountdown',
 },
 {
   name: 'Project 2',
@@ -13,7 +13,7 @@ const projects = [{
   paragraph: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
   image: 'images/popup-image.png',
   techs: ['HTML', 'Css', 'Bootstrap'],
-  live: '#',
+  live: '',
   repo: '#',
 },
 {
