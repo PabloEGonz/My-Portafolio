@@ -102,8 +102,8 @@ for (let j = 0; j < popupBtn.length; j += 1) {
     imageImg.src = projects[j].image;
     description.innerHTML = projects[j].description;
     paragr.innerHTML = projects[j].paragraph;
-    live.href = projects[j].live;
-    repo.href = projects[j].repo;
+    live.href = `${projects[j].live}`;
+    repo.href = `${projects[j].repo}`;
 
     for (let t = 0; t < projects[j].techs.length; t += 1) {
       techsLi[t].innerHTML = projects[j].techs[t];
